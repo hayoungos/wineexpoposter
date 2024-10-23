@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+  background-color: #CC4070;
+  font-family: "Hahmlet", serif;
+  height: 100%; /* 전체 높이 설정 */
+  margin: 0;
+  overflow: hidden;
+}
+
+.title-paragraph {
+  font-size: 100px;
+  font-weight: bolder;
+  color: white;
+  margin-left: 70px;
+  margin-top: 70px;
+}
+
+
+.paragraph-container{
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  z-index:10
+}
+.paragraph-1 {
+  margin-left: 850px;
+}
+
+.paragraph-2 {
+  margin-left:1190px;
+
+}
+
+.paragraph-3 {
+  margin-left:1150px;
+}
+
+.paragraph-4 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 180px;
+}
+
+.paragraph-5 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 100px;
+}
+
+
+.img-container {
+
+}
+
+
+/*오른쪽 와인 이미지 개체*/
+.right-wines {
+  width: 700px;
+  position: absolute;
+  top: -30px;
+  right: -400px;
+  z-index:1
+}
+
+.wine1{
+  width: 750px;
+  position: absolute;
+  top: 200px;
+  right: 70px;
+  z-index:5
+
+
+}
+
+.wine2{
+  width: 400px;
+  position: absolute;
+  top: 50px;
+  right: 200px;
+  z-index:3;
+}
+
+.wine3{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  right: 250px;
+  z-index: 2;
+}
+
+.wine4{
+  width: 350px;
+  position: absolute;
+  top: 350px;
+  right: 400px;
+  z-index:4
+}
+
+.mariage {
+
+}
+
+.biscuit1{
+  width: 150px;
+  position: absolute;
+  top: -70px;
+  right: 400px;
+  z-index:5
+}
+
+.biscuit3{
+  width: 150px;
+  position: absolute;
+  top: 650px;
+  right: 300px;
+  z-index:5
+}
+
+.olive1{
+  width: 150px;
+  position: absolute;
+  top: -70px;
+  right: -60px;
+  z-index: 0;
+
+}
+
+.olive2{
+  width: 150px;
+  position: absolute;
+  top: 300px;
+  right: 300px;
+  z-index:5
+
+}
+
+.cheese1 {
+  width: 150px;
+  position: absolute;
+  top: 490px;
+  right: 70px;
+  z-index:5
+}
+
+.cheese2 {
+  width: 150px;
+  position: absolute;
+  top: 200px;
+  right: 130px;
+  transform: rotate(15deg);
+  z-index:5
+}
