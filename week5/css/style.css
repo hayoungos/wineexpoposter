@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+body {
+  background-color: #CC4070;
+  font-family: "Hahmlet", serif;
+  height: 100%; /* 전체 높이 설정 */
+  margin: 0;
+  overflow: hidden;
+}
+
+.title-paragraph {
+  font-size: 100px;
+  font-weight: bolder;
+  color: white;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 350px;
+  z-index: 15;
+}
+
+
+.paragraph-container {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  z-index:10;
+}
+.paragraph-1 {
+  margin-left: 850px;
+  z-index:10;
+}
+
+.paragraph-2 {
+  margin-left:1190px;
+  z-index:10;
+
+}
+
+.paragraph-3 {
+  margin-left:1150px;
+  z-index:10;
+}
+
+.paragraph-4 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 100px;
+  z-index:10;
+}
+
+.paragraph-5 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 30px;
+  z-index:10;
+}
+
+
+@keyframes headTilt {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(8deg);
+  }
+  40% {
+    transform: rotate(4deg);
+  }
+  60% {
+    transform: rotate(-6deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*오른쪽 와인 이미지 개체*/
+.right-wines {
+  width: 700px;
+  position: absolute;
+  top: -50px;
+  right: -400px;
+  z-index:1;
+}
+
+.wine1{
+  width: 600px;
+  position: absolute;
+  top: -250px;
+  right: 150px;
+  animation: headTilt 2s infinite ease-in-out;
+}
+
+
+.wine2{
+  width: 600px;
+  position: absolute;
+  top: 230px;
+  right: 170px;
+  z-index:1;
+  animation: headTilt 1.5s infinite ease-in-out;
+}
+
+.wine3{
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  z-index: 2;
+  animation: headTilt 1.5s infinite ease-in-out;
+}
+
+.wine4{
+  width: 500px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  z-index:3;
+  animation: headTilt 2s infinite ease-in-out;
+}
+
+
+/*왼쪽 와인 이미지 개체*/
+
+.left-wines {
+  width: 700px;
+  position: absolute;
+  top: 20px;
+  left: -400px;
+  animation: headTilt 2s infinite ease-in-out;
+}
+
+
+.wine5{
+  width: 300px;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  z-index:-3;
+  animation: headTilt 1s infinite ease-in-out;
+}
+
+.wine6{
+  width: 750px;
+  position: absolute;
+  top: -250px;
+  right: -130px;
+  z-index: -5;
+  animation: headTilt 2s infinite ease-in-out;
+}
+
+.wine7{
+  width: 400px;
+  position: absolute;
+  top: 320px;
+  right: 70px;
+  animation: headTilt 2s infinite ease-in-out;
+}
+
+
+/*마리아주 이미지 개체*/
+.biscuit1{
+  width: 70px;
+  position: absolute;
+  top: -70px;
+  right: 400px;
+  z-index:5;
+
+  animation: fall linear infinite;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.biscuit2{
+  width: 80px;
+  position: absolute;
+  top: 650px;
+  right: 300px;
+  z-index:5;
+
+  animation: fall linear infinite;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.olive1{
+  width: 60px;
+  position: absolute;
+  top: -70px;
+  right: -60px;
+  z-index: 0;
+
+}
+
+.olive2{
+  width: 60px;
+  position: absolute;
+  top: 300px;
+  right: 1000px;
+  z-index:5;
+
+  animation: fall linear infinite;
+  animation-duration: 5s;
+  animation-delay: 0s;
+
+}
+
+.cheese1 {
+  width: 80px;
+  position: absolute;
+  top: 490px;
+  right: 70px;
+  z-index:5;
+
+  animation: fall linear infinite;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.cheese2 {
+  width: 70px;
+  position: absolute;
+  top: 200px;
+  right: 130px;
+  transform: rotate(15deg);
+  z-index:5;
+
+  animation: fall linear infinite;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+.cheese3 {
+  width: 80px;
+  position: absolute;
+  top: 100px;
+  right: 1200px;
+  z-index:5;
+
+  animation: fall linear infinite;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
+}
