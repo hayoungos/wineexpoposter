@@ -99,12 +99,12 @@ body {
 }
 
 .wine1 {
-  width: 600px;
+  width: 400px;
   position: absolute;
-  top: -250px;
+  top: -100px;
   right: 150px;
   animation: moveToCenter 5s ease-in-out forwardS;
-  animation-delay: 0s;
+  animation-delay: 0.3s;
 }
 
 .wine2 {
@@ -124,11 +124,11 @@ body {
   right: 150px;
   z-index: 2;
   animation: moveToCenter 5s ease-in-out forwards;
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 
 .wine4 {
-  width: 500px;
+  width: 450px;
   position: absolute;
   top: 200px;
   right: 50px;
@@ -171,6 +171,7 @@ body {
   position: absolute;
   top: 320px;
   right: 100px;
+  z-index: 2;
   animation: moveToCenter-1 5s ease-in-out forwards;
   animation-delay: 0.4s;
 }
@@ -245,11 +246,11 @@ body {
 }
 
 .wine2-1 {
-  width: 600px;
+  width: 500px;
   position: absolute;
-  top: 230px;
-  right: 170px;
-  z-index: 1;
+  top: 300px;
+  right:120px;
+  z-index: 4;
   animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
   animation-delay: 6.5s;
   animation-fill-mode: forwards;
@@ -263,7 +264,7 @@ body {
   right: 150px;
   z-index: 2;
   animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
-  animation-delay: 6.5s;
+  animation-delay: 6s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -293,7 +294,7 @@ body {
   width: 300px;
   position: absolute;
   top: 200px;
-  right: 100px;
+  right: 150px;
   z-index: -3;
   animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
   animation-fill-mode: forwards;
@@ -302,10 +303,10 @@ body {
 }
 
 .wine6-1 {
-  width: 750px;
+  width: 800px;
   position: absolute;
-  top: -250px;
-  right: -130px;
+  top: -300px;
+  right: -150px;
   z-index: -5;
   animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
   animation-delay: 6.5s;
