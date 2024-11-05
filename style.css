@@ -1,0 +1,417 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+
+body {
+  background:radial-gradient(circle, #cc4070, #FFF);
+  font-family: "Hahmlet", serif;
+  height: 100%; /* 전체 높이 설정 */
+  margin: 0;
+  overflow: hidden;
+}
+
+.paragraph-container {
+  font-size: 40px;
+  font-weight: 500;
+  color: white;
+  position: absolute;
+  bottom: 100px;
+  z-index: 10;
+}
+
+.title-paragraph {
+  font-size: 100px;
+  font-weight: bolder;
+  color: white;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 350px;
+  z-index: 15;
+  opacity: 0; /* 초기 상태에서 보이지 않음 */
+  animation: fadeIn 2s ease-in forwards; /* 애니메이션 설정 */
+  animation-delay: 6s;
+}
+
+.paragraph-1 {
+  margin-left: 850px;
+  z-index: 10;
+  opacity: 0; /* 초기 상태에서 보이지 않음 */
+  animation: fadeIn 2s ease-in forwards; /* 애니메이션 설정 */
+  animation-delay: 6.2s;
+}
+
+.paragraph-2 {
+  margin-left: 1190px;
+  z-index: 10;
+  opacity: 0; /* 초기 상태에서 보이지 않음 */
+  animation: fadeIn 2s ease-in forwards; /* 애니메이션 설정 */
+  animation-delay: 6.5s;
+}
+
+.paragraph-3 {
+  margin-left: 1150px;
+  z-index: 10;
+  opacity: 0; /* 초기 상태에서 보이지 않음 */
+  animation: fadeIn 2s ease-in forwards; /* 애니메이션 설정 */
+  animation-delay: 6.8s;
+}
+
+.paragraph-4 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 80px;
+  z-index: 10;
+  opacity: 0; /* 초기 상태에서 보이지 않음 */
+  animation: fadeIn 2s ease-in forwards; /* 애니메이션 설정 */
+  animation-delay: 6s;
+}
+
+.paragraph-5 {
+  font-size: 30px;
+  font-weight: 200;
+  color: white;
+  margin-left: 70px;
+  position: absolute;
+  bottom: 5px;
+  z-index: 10;
+  opacity: 0; /* 초기 상태에서 보이지 않음 */
+  animation: fadeIn 2s ease-in forwards; /* 애니메이션 설정 */
+  animation-delay: 6.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*오른쪽 와인 이미지 개체*/
+.right-wines {
+  width: 700px;
+  position: absolute;
+  top: -50px;
+  right: -400px;
+  z-index: 1;
+}
+
+.wine1 {
+  width: 400px;
+  position: absolute;
+  top: -100px;
+  right: 150px;
+  animation: moveToCenter 5s ease-in-out forwardS;
+  animation-delay: 0.3s;
+}
+
+.wine2 {
+  width: 600px;
+  position: absolute;
+  top: 230px;
+  right: 170px;
+  z-index: 1;
+  animation: moveToCenter 5s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.wine3 {
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  z-index: 2;
+  animation: moveToCenter 5s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.wine4 {
+  width: 450px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  z-index: 3;
+  animation: moveToCenter 5s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+/*왼쪽 와인 이미지 개체*/
+
+.left-wines {
+  width: 700px;
+  position: absolute;
+  top: 20px;
+  left: -400px;
+}
+
+.wine5 {
+  width: 300px;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+  z-index: -3;
+  animation: moveToCenter-1 5s ease-in-out forwards;
+  animation-delay: 0s;
+}
+
+.wine6 {
+  width: 750px;
+  position: absolute;
+  top: -250px;
+  right: -130px;
+  z-index: -5;
+  animation: moveToCenter-1 5s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.wine7 {
+  width: 400px;
+  position: absolute;
+  top: 320px;
+  right: 100px;
+  z-index: 2;
+  animation: moveToCenter-1 5s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+
+@keyframes moveToCenter {
+  0% {
+    transform: translateX(0) translateY(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-600px) translateY(0) scale(1.1) rotate(8deg); /* 빠르게 중앙으로 이동하며 약간 회전 */
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(-600px) translateY(-100px) scale(1.15) rotate(-8deg); /* 위로 올라가며 더 확대 */
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-600px) translateY(0) scale(1.05) rotate(5deg); /* 다시 내려오며 조금 작아짐 */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-600px) translateY(0) scale(1) rotate(0deg); /* 원래 크기로 돌아오며 페이드아웃 */
+    opacity: 0;
+  }
+}
+
+
+@keyframes moveToCenter-1 {
+  0% {
+    transform: translateX(0) translateY(0) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(600px) translateY(0) scale(1.1) rotate(-8deg); /* 빠르게 중앙으로 이동하며 약간 회전 */
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(600px) translateY(-100px) scale(1.15) rotate(8deg); /* 위로 올라가며 더 확대 */
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(600px) translateY(0) scale(1.05) rotate(-5deg); /* 다시 내려오며 조금 작아짐 */
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(600px) translateY(0) scale(1) rotate(0deg); /* 원래 크기로 돌아오며 페이드아웃 */
+    opacity: 0;
+  }
+}
+
+
+/*오른쪽 와인 이미지 개체*/
+.right-wines-1 {
+  width: 700px;
+  position: absolute;
+  top: -50px;
+  right: -400px;
+  z-index: 1;
+}
+
+.wine1-1 {
+  width: 600px;
+  position: absolute;
+  top: -250px;
+  right: 150px;
+  animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.wine2-1 {
+  width: 500px;
+  position: absolute;
+  top: 300px;
+  right:120px;
+  z-index: 4;
+  animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.wine3-1 {
+  width: 500px;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  z-index: 2;
+  animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.wine4-1 {
+  width: 500px;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  z-index: 3;
+  animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+/*왼쪽 와인 이미지 개체*/
+
+.left-wines-1 {
+  width: 700px;
+  position: absolute;
+  top: 20px;
+  left: -400px;
+}
+
+.wine5-1 {
+  width: 300px;
+  position: absolute;
+  top: 200px;
+  right: 150px;
+  z-index: -3;
+  animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
+  animation-fill-mode: forwards;
+  animation-delay: 6.5s;
+  opacity: 0;
+}
+
+.wine6-1 {
+  width: 800px;
+  position: absolute;
+  top: -300px;
+  right: -150px;
+  z-index: -5;
+  animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
+  animation-delay: 6.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.wine7-1 {
+  width: 500px;
+  position: absolute;
+  top: 320px;
+  right: 100px;
+  animation: fadeIn-2 2s ease-out, headTilt 3s 2s infinite ease-in-out; /* 2초 후 headTilt 시작 */
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
+/* 초기 페이드인 애니메이션 */
+@keyframes fadeIn-2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* headTilt 애니메이션: 이미지가 좌우로 기울어짐 */
+@keyframes headTilt {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg); /* 각도 조절 */
+  }
+}
+
+/*마리아주 이미지 개체*/
+
+.Mariage {
+  animation: fall linear infinite;
+}
+
+.biscuit {
+  width: 70px;
+  position: absolute;
+  top: -100px;
+  right: 1200px;
+  animation-delay: 4s;
+}
+
+.olive {
+  width: 70px;
+  position: absolute;
+  top: -100px;
+  right: 1300px;
+  animation: fall 5s linear infinite; /* 기본 애니메이션 */
+  animation-delay: 9s;
+}
+
+.cheese1 {  
+  width: 70px;
+  position: absolute;
+  top: -100px;
+  right: 500px;
+  animation: fall 7s linear infinite; /* 기본 애니메이션 */
+  animation-delay: 6s;
+}
+
+.cheese2 {
+  width: 70px;
+  position: absolute;
+  top: -100px;
+  right: 650px;
+  animation: fall 10s linear infinite; /* 기본 애니메이션 */
+  animation-delay: 6s;
+}
+
+.cheese3 {
+  width: 70px;
+  position: absolute;
+  top: -100px;
+  right: 1000px;
+  animation: fall 4s linear infinite; /* 기본 애니메이션 */
+  animation-delay: 6s;
+}
+
+.cheese4 {
+  width: 70px;
+  position: absolute;
+  top: -100px;
+  right: 400px;
+  animation: fall 8s linear infinite; /* 기본 애니메이션 */
+  animation-delay: 6s;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(200vh);
+  }
+}
